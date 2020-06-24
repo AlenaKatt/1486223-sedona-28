@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
@@ -16,14 +16,12 @@
           <img src="img/logo-sedona.svg" width="138" height="70" alt="Логотип Седона">
         </a>
         <div class="main-navigation-wrapper">
-          <div class="container">
             <ul class="site-navigation">
-              <li><a href="">Информация</a></li>
-              <li><a href="">Фото и видео</a></li>
-              <li><a href="">Карта штата</a></li>
-              <li><a href="inner.html">Гостиницы</a></li>
+              <li class="info-navigation"><a href="">Информация</a></li>
+              <li class="foto-video-navigation"><a href="">Фото и видео</a></li>
+              <li class="map-navigation"><a href="">Карта штата</a></li>
+              <li class="hotels-navigation"><a href="inner.html">Гостиницы</a></li>
             </ul>
-          </div>
         </div>
       </nav>
     </header>
@@ -33,49 +31,51 @@
         <img src="img/intro-welcome.svg" width="456" height="350" alt="Приветственное изображение">
       </section>
       <section class="features">
-        <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
-        <strong class="intro">Седона - небольшой городок в Аризоне,<br>
+        <div class="intro-shell">
+          <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
+          <strong class="intro">Седона - небольшой городок в Аризоне,<br>
            заслуживающий большего!</strong>
-        <p class="reasons">
-        Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!
-        </p>
+          <p class="reasons">
+            Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!
+          </p>
+        </div>
         <h2 class="visually-hidden">Преимущества</h2>
         <ul class="features-list">
-          <li class="feature-item">
-            <div class="feature-item-first sky">
+          <li class="feature-item-first">
+            <div class="sky">
               <h3>Настоящий<br>
                  городок</h3>
               <p>- №1 -</p>
               <p>Седона - не аттракцион для туристов, там<br>
                  течёт своя жизнь</p>
             </div>
-            <div class="feature-item-first canvas-1">
+            <div class="canvas-1">
               <img src="img/content-1.jpg" width="800" height="256" alt="Фото архитектуры Седоны">
             </div>
-            <div class="feature-item-first light" >
-              <img src="img/icon-1.svg" width="74" height="72" alt="Иконка домик">
+            <div class="light" >
+              <img class="house-icon" src="img/icon-1.svg" width="74" height="72" alt="Иконка домик">
               <h4>Жилье</h4>
               <p>Рекомендуем пожить в настоящем<br>
                  мотеле, все как в кино!</p>
             </div>
-            <div class="feature-item-first light">
-              <img src="img/icon-2.svg" width="74" height="70" alt="Иконка бургер">
+            <div class="light">
+              <img class="burger-icon" src="img/icon-2.svg" width="74" height="70" alt="Иконка бургер">
               <h4>Еда</h4>
               <p>Всегда заказывайте фиременый бургер,<br>
                  вы не разочаруетесь!</p>
             </div>
-            <div class="feature-item-first light">
-              <img src="img/icon-3.svg" width="64" height="76" alt="Иконка подарок">
+            <div class="light">
+              <img class="gift-icon" src="img/icon-3.svg" width="64" height="76" alt="Иконка подарок">
               <h4>Сувениры</h4>
               <p>Не только китайского, но и местного<br>
                  производства!</p>
             </div>
          </li>
-         <li class="feature-item">
-            <div class="feature-item-second canvas-2">
+         <li class="feature-item-second">
+            <div class="canvas-2">
               <img src="img/content-2.jpg" width="800" height="256" alt="Фото пейзажа Седоны">
             </div>
-            <div class="feature-item-second sky">
+            <div class="sky">
               <h3>Там есть<br>
                  мост дьявола</h3>
               <p>- №2 -</p>
@@ -83,7 +83,8 @@
                  вы осмелитесь</p>
             </div>
          </li>
-         <li class="feature-item neutral">
+         <div class="feature-items">
+         <li class="neutral">
             <div>
               <h3>Небольшая<br>
                  площадь</h3>
@@ -92,7 +93,7 @@
                  находятся очень близко </p>           
             </div>
          </li>
-         <li class="feature-item neutral">
+         <li class="neutral">
             <div>
               <h3>Красивая<br>
                  дорога</h3>
@@ -101,7 +102,7 @@
                  не скучно!</p>
             </div>
          </li>
-         <li class="feature-item neutral">
+         <li class="neutral">
             <div>
               <h3>Мало<br>
                  туристов</h3>
@@ -110,43 +111,42 @@
                  и толпится там</p>         
             </div>
          </li>
+        </div>
        </ul>
       </section>
       <section class="booking">
+        <div class="question-shell">
         <h2 class="visually-hidden">Информация для бронирования</h2>
        <strong class="question">Заинтересовались?</strong>
        <p class="answer">
          Укажите предполагаемые даты поездки,<br>
          и мы покажем вам лучшие предложения гостиниц в Седоне
        </p>
+        </div>
        <a href="" class="button button-look button-dark">Поиск гостиницы в Седоне</a>
        <div class="form">
        <form class="booking-form" action="https://echo.htmlacademy.ru" method="post">
-        <p class="booking-item">
+        <p class="booking-item booking-item-data data-top">
           <label for="data-coming">Дата заезда:</label>
-          <div class="line" >
             <input id="data-coming" type="text" name="date" value="24 апреля 2017">
             <button class="calendar"><img src="img/calendar.svg" width="21" height="22" alt="Календарь"></button>
-          </div>
         </p>
-        <p class="booking-item">
+        <p class="booking-item booking-item-data">
           <label for="data-departure">Дата выезда:</label>
-          <div class="line">
             <input id="data-departure" type="text" name="date" value="4 июля 2017">
             <button class="calendar"><img src="img/calendar.svg" width="21" height="22" alt="Календарь"></button>
-          </div>
         </p>
-        <p>
-          Взрослые:
-          <div class="small-line">
-            <a href=""></a>2<a href=""></a>
-          </div>
+        <p class="booking-item booking-item-number-1">
+          <label for="adult">Взрослые:</label>
+          <button class="button-minus"></button>
+          <input type="text" value="2">
+          <button class="button-plus"></button>
         </p>
-        <p>
-          Дети:
-          <div class="small-line">
-            <a href=""></a>0<a href=""></a>
-          </div>
+        <p class="booking-item booking-item-number-2">
+          <label for="children">Дети:</label>
+          <button class="button-minus"></button>
+          <input type="text" value="0">
+          <button class="button-plus"></button>
         </p>
          <input type="submit" value="Найти" class="button button-find button-light">
        </form>
@@ -161,25 +161,29 @@
     <footer class="main-footer">
       <div class="contact">
         <p>#VizitSedona</p>
-        <p>Тел: +7(495)666-01-66</p>
+        <p>Тел: +7(495) 666-01-66</p>
       </div>
       <div class="social">
-        <ul class="social-items">
+        <ul>
           <li>
-            <span class="visually-hidden">Твиттер</span>
-            <a href=""><img src="img/icon-twitter.svg" width="17" height="15" alt="Twitter"></a>
+            <a class="social-items" href=""><img src="img/icon-twitter.svg" width="17" height="15" alt="Twitter">
+              <span class="visually-hidden">Твиттер</span>
+            </a>  
           </li>
           <li>
-            <span class="visually-hidden">Фэйсбук</span>
-            <a href=""><img src="img/icon-facebook.svg" width="12" height="22" alt="Facebook"></a>
+            <a class="social-items" href=""><img src="img/icon-facebook.svg" width="12" height="22" alt="Facebook">
+              <span class="visually-hidden">Фэйсбук</span>
+            </a>
           </li>
           <li>
-            <span class="visually-hidden">Ютуб</span>
-            <a href=""><img src="img/icon-youtube.svg" width="20" height="16" alt="Youtube"></a></li>
+            <a class="social-items" href=""><img src="img/icon-youtube.svg" width="20" height="16" alt="Youtube">
+              <span class="visually-hidden">Ютуб</span>
+            </a>
+          </li>
         </ul>
       </div>
       <div class="logo-html">
-        <p class="website">Website be</p>
+        <p class="website">Website by</p>
         <a href="https://htmlacademy.ru/intensive/htmlcss">
           <img src="img/logo-htmlacademy.svg" width="114" height="40" alt="Ссылка на интенсив"></a>
       </div>
