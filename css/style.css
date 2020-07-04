@@ -175,7 +175,7 @@
       width: 470px;
       min-height: 80px;
       font-size: 21px;
-      line-height: 26px;  
+      line-height: 27px;  
   }
   .reasons {
       font-size: 14px;
@@ -191,7 +191,7 @@
       margin: 0;
       padding: 0;
       font-size: 14px;
-      line-height: 21px;
+      line-height: 22px;
       list-style: none;
   }
   .feature-item-first {
@@ -225,8 +225,13 @@
       color: var(--basic-white);
       background-color: var(--basic-sky);
   }
-  .sky h3 {
+  div.sky h3 {
     font-size: 21px;
+    margin-top: 45px;
+  }
+  div.sky:last-child h3 {
+      margin-top: 47px;
+      margin-bottom: 26px;;
   }
   .features-list h3 {
       margin-top: 47px;
@@ -237,22 +242,22 @@
   }
   .features-list p {
       margin-top: 0;
-      margin-bottom: 23px;
+      margin-bottom: 25px;
   }
   .light {
       color: var(--basic-dark);
   }
   .light .house-icon {
       margin-top: 60px;
-      margin-bottom: 28px;
+      margin-bottom: 22px;
   }
   .light .burger-icon {
       margin-top: 61px;
-      margin-bottom: 29px;
+      margin-bottom: 23px;
   }
   .light .gift-icon {
       margin-top: 56px;
-      margin-bottom: 28px;
+      margin-bottom: 22px;
   }
   .light h4 {
       color: var(--basic-black);
@@ -267,6 +272,9 @@
   .neutral h3 {
       color: var(--basic-black);
       font-size: 21px;
+  }
+  .neutral p {
+      margin-bottom: 23px;
   }
   .booking {
       position: relative;
@@ -283,8 +291,8 @@
   }
   .answer {
       font-size: 14px;
-      line-height: 24px;
-      margin-top: 30px;
+      line-height: 26px;
+      margin-top: 27px;
       color: var(--basic-dark);
   }
   .button {
@@ -356,11 +364,13 @@
   .booking-item-data input {
       width: 346px;
       height: 38px;
+      text-transform: uppercase;
       box-sizing: border-box;
       padding-top: auto;
       padding-bottom: auto;
-      padding-left: 13px;
-      padding-right: 13px;
+      padding-left: 12px;
+      padding-right: 12px;
+      padding-bottom: 5px;
       font: inherit;
       background-color: var(--form-line);
       border: none;
@@ -407,6 +417,7 @@
       display: inline-block;
       width: 109px;
       text-align: start;
+      box-sizing: border-box;
   }
   .booking-item-number-1 {
       width: 227px;
@@ -442,6 +453,7 @@
       width: 38px;
       height: 38px;
       padding: 0;
+      padding-bottom: 5px;
       margin: 0;
       box-sizing: border-box;
       border: none;
@@ -477,8 +489,8 @@
       display: block;
       width: 458px;
       height: 58px;
-      margin-bottom: 55px;
-      margin-top: 54px;
+      margin-bottom: 56px;
+      margin-top: 53px;
       margin-right: 0;
       margin-left: 0;
       padding: 0;
@@ -558,7 +570,7 @@
   }
   .logo-html a {
       position: relative;
-      top: 43px;
+      top: 39px;
   }
   .social li {
       list-style: none;
@@ -593,9 +605,10 @@
   .social-items:active svg {
       fill: var(--button-active-color);
   }
-  .website {
+  .logo-html .website {
       font-size: 14px;
       line-height: 26px;
+      margin-top: 49px;
   }
   .website-logo svg {
       fill: var(--website-logo);
@@ -630,7 +643,7 @@
   }
   .filter-hotels-grid {
       display: grid;
-      grid-template-columns: 73px 255px 482px 317px 73px;
+      grid-template-columns: 72px 255px 482px 317px 74px;
       grid-template-rows: 217px;
   }
   .hotels-boons {
@@ -708,14 +721,14 @@
       font-size: 16px;
       line-height: 21px;
       font-weight: bold;
-      padding-top: 27px;
+      padding-top: 25px;
       color: var(--basic-white);
   }
   .legend-bottom {
-      padding-bottom: 24px;
+      padding-bottom: 27px;
   }
-  .legend-bottom-two {
-      padding-bottom: 11px;
+  fieldset:last-child .legend-bottom {
+      padding-bottom: 13px;
   }
   .filter-hotels label {
       font-size: 14px;
@@ -724,14 +737,14 @@
   }
   .hotels-boons label {
       padding-left: 17px;
-      padding-top: 2px;
-      margin-bottom: 22px;
+      padding-top: 1px;
+      margin-bottom: 25px;
       margin-left: 23px;
   }
   .hotels-type label {
       padding-left: 19px;
-      padding-top: 2px;
-      margin-bottom: 22px;
+      padding-top: 1px;
+      margin-bottom: 25px;
       margin-left: 23px;
   }
   .hotels-range {
@@ -764,7 +777,7 @@
   }
   .price-controls .max-price {
       display: inline-block;
-      margin-left: 75px;
+      margin-left: 74px;
   }
   .price-controls input {
       width: 50px;
@@ -784,10 +797,10 @@
   }
   .range-controls {
       position: relative;
-      height: 40px;
+      height: 42px;
       margin: 0px;
       margin-bottom: 13px;
-      padding-top: 19px;
+      padding-top: 20px;
       box-sizing: border-box;
       background-color: transparent;
   }
@@ -796,7 +809,7 @@
       background: var(--button-active-color);
   }
   .range-controls .bar {
-      width: 248px;
+      width: 253px;
       height: 2px;
       background: var(--basic-white);
   }
@@ -823,13 +836,14 @@
       left: 0px;
   }
   .range-controls .toggle-max {
-      left: 248px;
+      left: 253px;
   }
   .submit-filter {
       width: 137px;
       height: 36px;
       padding: 0;
       margin: 0 auto;
+      margin-left: 86px;
       box-sizing: border-box;
       display: block;
       font-size: 14px;
@@ -980,7 +994,7 @@
       width: 110px;
       height: 27px;
       text-align: center;
-      padding-top: 3px;
+      padding-top: 4px;
       box-sizing: border-box;
   }
   .button-booking {
@@ -989,25 +1003,17 @@
       width: 142px;
       height: 27px;
       text-align: center;
-      padding-top: 3px;
+      padding-top: 4px;
       box-sizing: border-box;
   }
   .hotel-star-rating {
       display: flex;
       flex-direction: column;
   }
-  .hotel-star {
-      text-align: end;
-      padding-right: 72px;
-      margin-top: 28px;
-      margin-bottom: 0px;
-      outline: 5px solid rgba(0, 255, 255, 0.3);
-      outline-offset: -5px; 
-  }
   .hotel-rating {
       text-align: center;
       margin-right: 73px;
-      margin-bottom: 30px;
+      margin-top: 48px;
       padding-top: 3px;
       width: 110px;
       height: 27px;
@@ -1021,6 +1027,7 @@
       background-image: url("../img/star.svg");
       width: 90px;
       height: 17px;
+      margin-top: 29px;
       background-repeat: space;
   }
   div.star-two {
