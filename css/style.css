@@ -127,7 +127,7 @@
   }
   .site-navigation a {
       color: var(--basic-black);
-      display: inline-block;
+      display: block;
       margin-top: 15px;
       margin-bottom: 15px;
   }
@@ -161,6 +161,7 @@
       top: 77px;
   }
   .features {
+      width: 1200px;
       color: var(--basic-black);
       text-align: center;
   }
@@ -188,6 +189,9 @@
       color: var(--basic-dark);
   }
   .features-list {
+      display: grid;
+      grid-template-columns: 400px 400px 400px;
+      grid-template-rows: 256px 330px 256 256;
       margin: 0;
       padding: 0;
       font-size: 14px;
@@ -195,6 +199,10 @@
       list-style: none;
   }
   .feature-item-first {
+      grid-column-start: 1;
+      grid-column-end: 4;
+      grid-row-start: 1;
+      grid-row-end: 3;
       display: grid;
       grid-template-columns: 400px 400px 400px;
       grid-template-rows: 256px 330px;
@@ -204,6 +212,10 @@
       grid-column-end: 4;
   }
   .feature-item-second {
+      grid-column-start: 1;
+      grid-column-end: 4;
+      grid-row-start: 3;
+      grid-row-end: 4;
       display: grid;
       grid-template-columns: 400px 400px 400px;
       grid-template-rows: 256px;
@@ -211,11 +223,6 @@
   .canvas-2 {
       grid-column-start: 1;
       grid-column-end: 3;
-  }
-  .feature-items {
-      display: grid;
-      grid-template-columns: 400px 400px 400px;
-      grid-template-rows: 256px;
   }
   .canvas-1,
   .canvas-2 {
@@ -264,6 +271,33 @@
       font-size: 21px;
       margin-top: 0;
       margin-bottom: 25px;
+  }
+  .features-item-thid {
+      display: block;
+      width: 400px;
+      height: 256px;
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 4;
+      grid-row-end: 5;
+  }
+  .features-item-fourth {
+      display: block;
+      width: 400px;
+      height: 256px;
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 4;
+      grid-row-end: 5;
+  }
+  .features-item-fifth {
+      display: block;
+      width: 400px;
+      height: 256px;
+      grid-column-start: 3;
+      grid-column-end: 4;
+      grid-row-start: 4;
+      grid-row-end: 5;
   }
   .neutral {
       color: var(--basic-dark);
@@ -329,7 +363,7 @@
       background-color: var(--button-active);
       color: var(--button-active-color);
   } 
-  .form {
+  .form-show {
       position: absolute;
       top: 291px;
       left: 316px;
@@ -344,6 +378,9 @@
       color: var(--basic-black);
       background-color: var(--basic-white);
       box-shadow: 0px 7px 15px var(--form-shadow);
+  }
+  .form {
+      display: none;
   }
   .booking-form {
       display: flex;
