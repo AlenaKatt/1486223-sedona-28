@@ -5,7 +5,7 @@
     <title>HTML Academy: гостиницы Седоны</title>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
 
   <body class="page-body">
@@ -17,10 +17,10 @@
         </a>
         <div class="main-navigation-wrapper">
            <ul class="site-navigation">
-             <li class="info-navigation"><a href="">Информация</a></li>
-             <li class="foto-video-navigation"><a href="">Фото и видео</a></li>
-             <li class="map-navigation"><a href="">Карта штата</a></li>
-             <li class="hotels-navigation"><a href="inner.html">Гостиницы</a></li>
+             <li class="info-navigation"><a href="#">Информация</a></li>
+             <li class="foto-video-navigation"><a href="#">Фото и видео</a></li>
+             <li class="map-navigation"><a href="#">Карта штата</a></li>
+             <li class="hotels-navigation"><a class="active-hotels">Гостиницы</a></li>
            </ul>
         </div>
       </nav>
@@ -70,11 +70,11 @@
               <legend class="legend-bottom">Стоимость в сутки (р):</legend>
               <div class="range-number">
                 <div class="price-controls">
-                  <label class="min-price">
-                    от <input type="number" name="min-price" value="0">
+                  <label class="min-price" for="min-price">
+                    от <input type="text" name="min-price" value="0" id="min-price">
                   </label>
-                  <label class="max-price">
-                    до <input type="number" name="max-price" value="3000">
+                  <label class="max-price" for="max-price">
+                    до <input type="text" name="max-price" value="3000" id="max-price">
                   </label>
                 </div>
                 <div class="range-controls">
@@ -96,24 +96,24 @@
           <p class="number">Найдено: 3</p>
           <p class="sort">Сортировка:</p>
           <ul class="sort-items">
-            <li><a href="" class="active-item">По цене</a></li>
-            <li><a href="">По типу</a></li>
-            <li><a href="">По рейтингу</a></li>
+            <li><a href="#" class="active-item">По цене</a></li>
+            <li><a href="#">По типу</a></li>
+            <li><a href="#">По рейтингу</a></li>
           </ul>
           <ul class="triangle">
             <li>
-              <button class="triangle-up">
+              <a href="#" class="triangle-up">
                 <svg width="11" height="10" viewBox="0 0 11 10" xmlns="http://www.w3.org/2000/svg">
                   <path d="M5.5 0L0 10H11L5.5 0Z"/>
                 </svg>
-              </button>
+              </a>
             </li>
             <li>
-              <button class="triangle-down triangle-active">
+              <a href="#" class="triangle-down triangle-active">
                 <svg width="11" height="10" viewBox="0 0 11 10" xmlns="http://www.w3.org/2000/svg">
                   <path d="M5.5 10L0 0H11"/>
                 </svg>
-              </button>
+              </a>
             </li>
           </ul>
         </div>
@@ -123,11 +123,11 @@
               <img src="img/content-3.jpg" width="135" height="90" alt="Пейзаж AMARA RESORT & SPA">
             </div>
             <div class="hotel-cost">
-              <h2 class="hotel-cost-1">Amara Resort & SPA</h2>
-              <p class="hotel-cost-2">Гостиница</p>
+              <h2 class="hotel-cost-1"><a href="#" class="link-hotel">Amara Resort & SPA</a></h2>
+              <p class="hotel-cost-2"></a>Гостиница</p>
               <p class="hotel-cost-3">От 4000 р.</p>
-              <a class="button button-detail button-light" href="">Подробнее</a>
-              <a class="button button-booking button-dark" href="">Забронировать</a>
+              <a class="button button-detail button-light" href="#">Подробнее</a>
+              <a class="button button-booking button-dark" href="#">Забронировать</a>
             </div>
             <div class="hotel-star-rating">
               <div class="star star-four"></div>
@@ -139,11 +139,11 @@
               <img src="img/content-4.jpg" width="135" height="90" alt="Пейзаж DESERT QUAIL INN">
             </div>
             <div class="hotel-cost">
-              <h2 class="hotel-cost-1">Desert Quail Inn</h2>
+              <h2 class="hotel-cost-1"><a href="#" class="link-hotel">Desert Quail Inn</a></h2>
               <p class="hotel-cost-2">Мотель</p>
               <p class="hotel-cost-3">От 3000 р.</p>
-              <a class="button button-detail button-light" href="">Подробнее</a>
-              <a class="button button-booking button-dark" href="">Забронировать</a>
+              <a class="button button-detail button-light" href="#">Подробнее</a>
+              <a class="button button-booking button-dark" href="#">Забронировать</a>
             </div>
             <div class="hotel-star-rating">
               <div class="star star-three"></div>
@@ -155,11 +155,11 @@
               <img src="img/content-5.jpg" width="135" height="90" alt="Пейзаж VILLAS AT POCO DIABLO">
             </div>
             <div class="hotel-cost">
-              <h2 class="hotel-cost-1">Villas at Poco Diablo</h2>
+              <h2 class="hotel-cost-1"><a href="#" class="link-hotel">Villas at Poco Diablo</a></h2>
               <p class="hotel-cost-2">Апартаменты</p>
               <p class="hotel-cost-3">От 2000 р.</p>
-              <a class="button button-detail button-light" href="">Подробнее</a>
-              <a class="button button-booking button-dark" href="">Забронировать</a>
+              <a class="button button-detail button-light" href="#">Подробнее</a>
+              <a class="button button-booking button-dark" href="#">Забронировать</a>
             </div>
             <div class="hotel-star-rating">
               <div class="star star-two"></div>
@@ -173,12 +173,12 @@
     <footer class="main-footer">
       <div class="contact">
         <p>#VisitSedona</p>
-        <p>Тел: +7(495) 666-01-66</p>
+        <p><a href="tel:+74956660166" class="tel">Тел: +7(495) 666-01-66</a></p>
       </div>
       <div class="social">
         <ul>
           <li>
-            <a class="social-items" href="">
+            <a class="social-items" href="#">
               <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="15" viewBox="0 0 17 15">
                 <path d="M10.95.144c1.685-.496 2.984.27 3.577 1.179.673-.231 1.331-.481 2.011-.708a2.345 2.345 0 0 1-.857 1.768c.685.17 1.304-.491 1.304-.491-.169 1-1.006 1.788-1.563 2.024-.231 6.75-3.175 11.217-10.077 11.082h-.446c-.41 0-4.164-.46-4.898-1.887 2.271.196 3.893-.422 4.693-1.177-.96-.3-2.679-.477-2.979-2.95.349.106.564.228 1.19.119C1.705 8.247.374 7.53.448 5.33c.285.328 1.067.536 1.34.472C1.085 5.561-.182 2.442.894.85c1.818 1.854 3.735 3.606 7.152 3.773C8.254 2.33 9.183.793 10.95.144z"/>
               </svg>
@@ -186,7 +186,7 @@
             </a>  
           </li>
           <li>
-            <a class="social-items" href="">
+            <a class="social-items" href="#">
               <svg xmlns="http://www.w3.org/2000/svg" width="12" height="22" viewBox="0 0 12 22">
                 <path d="M12 4V0H8a4 4 0 0 0-4 4v4H0v4h4v10h4V12h4V8H8V4h4z"/>
               </svg>
@@ -194,7 +194,7 @@
             </a>
           </li>
           <li>
-            <a class="social-items" href="">
+            <a class="social-items" href="#">
               <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="16" viewBox="0 0 20 16">
                 <path d="M17 0H3C1.35 0 0 1.35 0 3v10c0 1.65 1.35 3 3 3h14c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zM6.027 11.998V4.002L15.014 8l-8.987 3.998z"/>
               </svg>
