@@ -1,5 +1,5 @@
 var buttonlook = document.querySelector(".button-look");
-var bookingform = document.querySelector(".form");
+var bookingform = document.querySelector(".form-show");
 var datacoming = bookingform.querySelector(".data-coming");
 var datadeparture = bookingform.querySelector(".data-departure");
 var adult = bookingform.querySelector(".adult");
@@ -23,8 +23,8 @@ var storageAdult = "";
 
   buttonlook.addEventListener("click", function (evt) {
     evt.preventDefault();
-    bookingform.classList.toggle("form-show");
     bookingform.classList.toggle("form");
+    bookingform.classList.toggle("form-show");
     if (storage) {
         children.value = storage;
       }
@@ -37,6 +37,9 @@ var storageAdult = "";
   form.addEventListener("submit", function (evt) {
     if (!datacoming.value || !datadeparture.value || !adult.value || !children.value) {
         evt.preventDefault();
+        bookingform.classList.add("form-error");
+        bookingform.offsetWidth = bookingform.offsetWidth;
+        bookingform.classList.add("form-error");
       } else {
         if (isStorageSupport) {
         localStorage.setItem("children", children.value);

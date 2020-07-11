@@ -4,24 +4,24 @@
     <meta charset="utf-8">
     <title>HTML Academy: гостиницы Седоны</title>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
 
-  <body class="page-body">
-      
+  <body class="page-body"> 
+
     <header class="main-header">
       <nav class="main-navigation">
         <a href="index.html" class="main-header-logo">
           <img src="img/logo-sedona.svg" width="138" height="70" alt="Логотип Седона">
         </a>
         <div class="main-navigation-wrapper">
-           <ul class="site-navigation">
-             <li class="info-navigation"><a href="#">Информация</a></li>
-             <li class="foto-video-navigation"><a href="#">Фото и видео</a></li>
-             <li class="map-navigation"><a href="#">Карта штата</a></li>
-             <li class="hotels-navigation"><a class="active-hotels">Гостиницы</a></li>
-           </ul>
+          <ul class="site-navigation">
+            <li class="info-navigation"><a href="#">Информация</a></li>
+            <li class="photo-video-navigation"><a href="#">Фото и видео</a></li>
+            <li class="map-navigation"><a href="#">Карта штата</a></li>
+            <li class="hotels-navigation"><a class="active-hotels">Гостиницы</a></li>
+          </ul>
         </div>
       </nav>
     </header>
@@ -79,10 +79,10 @@
                 </div>
                 <div class="range-controls">
                   <div class="scale">
-                    <div class="bar" style="width: 253px"></div>
+                    <div class="bar"></div>
                   </div>
-                  <div class="toggle toggle-min" tabindex="0" style="left: 0"></div>
-                  <div class="toggle toggle-max" tabindex="0" style="left: 253px"></div>
+                  <div class="toggle toggle-min" tabindex="0"></div>
+                  <div class="toggle toggle-max" tabindex="0"></div>
                 </div>
               </div>
               <button type="submit" class="submit-filter">Показать</button>
@@ -106,6 +106,7 @@
                 <svg width="11" height="10" viewBox="0 0 11 10" xmlns="http://www.w3.org/2000/svg">
                   <path d="M5.5 0L0 10H11L5.5 0Z"/>
                 </svg>
+                <span class="visually-hidden">Сортировка по возрастанию</span>
               </a>
             </li>
             <li>
@@ -113,13 +114,14 @@
                 <svg width="11" height="10" viewBox="0 0 11 10" xmlns="http://www.w3.org/2000/svg">
                   <path d="M5.5 10L0 0H11"/>
                 </svg>
+                <span class="visually-hidden">Сортировка по убыванию</span>
               </a>
             </li>
           </ul>
         </div>
         <ul class="list-hotels-enum">
           <li class="hotel-info">
-            <div class="hotel-foto">
+            <div class="hotel-photo">
               <img src="img/content-3.jpg" width="135" height="90" alt="Пейзаж AMARA RESORT & SPA">
             </div>
             <div class="hotel-cost">
@@ -135,7 +137,7 @@
             </div>
           </li>
           <li class="hotel-info">
-            <div class="hotel-foto">
+            <div class="hotel-photo">
               <img src="img/content-4.jpg" width="135" height="90" alt="Пейзаж DESERT QUAIL INN">
             </div>
             <div class="hotel-cost">
@@ -151,7 +153,7 @@
             </div>
           </li>
           <li class="hotel-info">
-            <div class="hotel-foto">
+            <div class="hotel-photo">
               <img src="img/content-5.jpg" width="135" height="90" alt="Пейзаж VILLAS AT POCO DIABLO">
             </div>
             <div class="hotel-cost">
