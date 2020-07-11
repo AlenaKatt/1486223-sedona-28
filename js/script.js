@@ -10,6 +10,9 @@ var isStorageSupport = true;
 var storage = "";
 var storageAdult = "";
 
+bookingform.classList.add("form");
+bookingform.classList.remove("form-show");
+
  try {
     storage = localStorage.getItem("children");
   } catch (err) {
@@ -37,9 +40,6 @@ var storageAdult = "";
   form.addEventListener("submit", function (evt) {
     if (!datacoming.value || !datadeparture.value || !adult.value || !children.value) {
         evt.preventDefault();
-        bookingform.classList.add("form-error");
-        bookingform.offsetWidth = bookingform.offsetWidth;
-        bookingform.classList.add("form-error");
       } else {
         if (isStorageSupport) {
         localStorage.setItem("children", children.value);
